@@ -2,8 +2,31 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <h2>PORADA KRZYSZTOFA T.</h2>
+
+  <p>Płatność BLIK</p>
+
+  <p>Kwota: 50 Euro</p>
+
+  <button onclick="pay()">ZAPŁAĆ TERAZ</button>
+
+  <div id="success" class="success">
+
+    ✅ Płatność została dokonana
+
+  </div>
+
+
+
+  <script>
+
+    function pay() {
+
+      document.getElementById('success').style.display = 'block';
+
+    }
+
+  </script>
 
 </body>
 </html>
