@@ -58,7 +58,7 @@
   </style>
 </head>  
 <body>
-
+  <div id="main" class="main">
   <h2>PORADA KRZYSZTOFA T.</h2>
 
   <p>Płatność BLIK</p>
@@ -66,7 +66,7 @@
   <p>Kwota: 50 Euro</p>
 
   <button onclick="pay()">ZAPŁAĆ TERAZ</button>
-
+  </div>
   <div id="success" class="success">
     <img src="ananas.jpeg" alt="Ananas">
   </div>
@@ -76,6 +76,7 @@
   <script>
 
     function pay() {
+      document.getElementById('main').style.display = 'none';
 
       document.getElementById('success').style.display = 'block';
 
